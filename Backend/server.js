@@ -4,10 +4,8 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const path = require('path');
-//app.use(cors());
-app.use(cors({
-    origin: 'https://learn-deploy-theta.vercel.app/' // Change this to your frontend domain
-}));
+app.use(cors());
+
 
 const PORT = process.env.PORT || 2000;
 
